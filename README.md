@@ -18,9 +18,9 @@ En esta tarea, nos familiarizaremos con el API descrito en el capítulo del libr
 Nota: El enlace suave no forma parte del recuento de enlaces, ya que el número de inodo del enlace suave es diferente del archivo original.
 
 > $ ln test.c test1.c     #hard link
-  $ ln -s test.c test2.c  #soft link
-  $ ls -l test*.c
-  -rwxr-xr-x 2 guru users 267 Jul 18 16:59 test1.c*
+> $ ln -s test.c test2.c  #soft link
+> $ ls -l test*.c
+> -rwxr-xr-x 2 guru users 267 Jul 18 16:59 test1.c*
   lrwxrwxrwx 1 guru users   6 Jul 31 16:13 test2.c -> test.c*
   -rwxr-xr-x 2 guru users 267 Jul 18 16:59 test.c*
 
