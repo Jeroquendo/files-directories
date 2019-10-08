@@ -24,9 +24,9 @@ En esta tarea, nos familiarizaremos con el API descrito en el capítulo del libr
   lrwxrwxrwx 1 guru users   6 Jul 31 16:13 test2.c -> test.c*
   -rwxr-xr-x 2 guru users 267 Jul 18 16:59 test.c*
 ```
-- Por defecto, un archivo tendrá un recuento de enlaces de 1, es decir, cualquier archivo nuevo creado tendrá un recuento de enlaces 1.
+- Por defecto, un archivo tendrá un hardlink de 1.
 
-- El archivo, test.c, ahora tiene un conteo de enlaces de 2 porque hay un enlace duro creado para el archivo. También tenga en cuenta que la creación de archivos vinculados por software no tuvo ningún impacto en el recuento de enlaces.
+- El archivo, test.c, ahora tiene un hard link de 2 porque hay un enlace duro creado para el archivo. También tenga en cuenta que la creación de archivos vinculados por software no tuvo ningún impacto en el recuento de enlaces.
 
 2. **List Files**: Escriba un programa que liste los archivos en un directorio dado. Cuando sea llamado sin argumentos, el programa deberá imprimir solo los nombres del archivo. Cuando se invoque con la flag ```-l```, el programa deberá imprimir la información de cada archivo tal como, owner, group, permissions y otra información obtenida de la llamada de sistema ```stat()```. El programa deberá tomar un argumento adicional el cual es el directorio a leer, por ejemplo, ```myls -l directory```.  Si ningún directorio es dado, el programa deberá usar el directorio de trabajo actual. Interfaces útiles: ```stat()```, ```opendir()```, ```readdir()```, ```getcwd()```.
 
