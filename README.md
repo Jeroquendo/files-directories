@@ -11,7 +11,7 @@ En esta tarea, nos familiarizaremos con el API descrito en el capítulo del libr
 - El codigo realizado para el comando ```Stat()``` es el siguiente: [fstat.c](https://github.com/Jeroquendo/files-directories/blob/master/fstat.c)
 - Al ejecutar el codigo este muestra lo siguiente:
 
-![alt tag]()
+![alt tag](https://github.com/Jeroquendo/files-directories/blob/master/Imagenes/01%20Stat.png)
 
 - Link Count:  El link count de un archivo indica el número total de enlaces que tiene un archivo, que no es más que el número de enlaces duros que tiene un archivo. Este recuento, sin embargo, no incluye el recuento de enlaces blandos.
 
