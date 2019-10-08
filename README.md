@@ -15,15 +15,15 @@ En esta tarea, nos familiarizaremos con el API descrito en el capítulo del libr
 
 - Link Count:  El link count de un archivo indica el número total de enlaces que tiene un archivo, que no es más que el número de enlaces duros que tiene un archivo. Este recuento, sin embargo, no incluye el recuento de enlaces blandos.
 
-Nota: El enlace suave no forma parte del recuento de enlaces, ya que el número de inodo del enlace suave es diferente del archivo original.
-
-> $ ln test.c test1.c     #hard link
-> $ ln -s test.c test2.c  #soft link
-> $ ls -l test*.c
-> -rwxr-xr-x 2 guru users 267 Jul 18 16:59 test1.c*
+- Nota: El enlace suave no forma parte del recuento de enlaces, ya que el número de inodo del enlace suave es diferente del archivo original.
+```
+ $ ln test.c test1.c     #hard link
+ $ ln -s test.c test2.c  #soft link
+ $ ls -l test*.c
+ -rwxr-xr-x 2 guru users 267 Jul 18 16:59 test1.c*
   lrwxrwxrwx 1 guru users   6 Jul 31 16:13 test2.c -> test.c*
   -rwxr-xr-x 2 guru users 267 Jul 18 16:59 test.c*
-
+```
 - Por defecto, un archivo tendrá un recuento de enlaces de 1, es decir, cualquier archivo nuevo creado tendrá un recuento de enlaces 1.
 
 - El archivo, test.c, ahora tiene un conteo de enlaces de 2 porque hay un enlace duro creado para el archivo. También tenga en cuenta que la creación de archivos vinculados por software no tuvo ningún impacto en el recuento de enlaces.
