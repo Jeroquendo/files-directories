@@ -52,6 +52,7 @@ En esta tarea, nos familiarizaremos con el API descrito en el capítulo del libr
 
 - El codigo realizado para el comando ```tail()``` es el siguiente: [fstat.c](https://github.com/Jeroquendo/files-directories/blob/master/mi_tail.c)
 
+
 4. **Recursive Search**: Escriba un programa que imprima los nombres de cada archivo y directorio del árbol del sistema de archivos (*file system tree*), empezando en un punto dado del sistema de archivos en el árbol. Por ejemplo, cuando ejecute sin argumentos, el programa deberá empezar con el directorio de trabajo actual e imprimir su contenido, así como con los contenidos de cualquier subdirectorio en este, etc., hasta que el árbol entero, root en el CWD sea impreso. Si se da un único argumento (de un nombre de un directorio), use este como root en vez de él del sistema. Refine su busqueda recursiva con más opciones de busqueda divertidas, similar a la poderosa herramienta por línea de comandos ```find```. Interfaces Útiles: Resolverlo.
 
 
