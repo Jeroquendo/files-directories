@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdlib.h>
+
 
 int main(int argc, char * argv[])
 {
 	FILE * file;
   char str[10000];
 	int c;
-  int n = atoi(argv[1]);
-	int linea = 0;
+  int n = abs(atoi(argv[1]));
+	int linea = -1;
 	
 
 	if (argc != 3) {
