@@ -47,7 +47,7 @@ int main(int argc, char* argv[])
         {
             sprintf(buf, "%s/%s", argv[1], miArchivo->d_name);    
             char archivo[100];
-            strcpy(archivo, "./fstat.out");
+            strcpy(archivo, "./fstat.out ");
             strcat(archivo, miArchivo->d_name);
             int status = system(&archivo);
         }
@@ -64,7 +64,7 @@ int main(int argc, char* argv[])
         {
             sprintf(buf, "%s/%s", argv[1], miArchivo->d_name);
             char archivo[100];
-            strcpy(archivo, "./fstat.out");
+            strcpy(archivo, "./fstat.out ");
             strcat(archivo, argv[2]);
             strcat(archivo, "/");
             strcat(archivo, miArchivo->d_name);
