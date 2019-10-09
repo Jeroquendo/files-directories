@@ -36,14 +36,21 @@ En esta tarea, nos familiarizaremos con el API descrito en el capítulo del libr
 
 ![alt tag](https://github.com/Jeroquendo/files-directories/blob/master/Imagenes/02.1%20mi_Ls.png)
 
-- Al ejecutar el codigo con el flag -l argumentos este muestra lo siguiente:
+- Para ejecutar el codigo con el flag -l los argumentos deben indicarse asi:
+```c
+./mi_ls -l
+```
 
-![alt tag](https://github.com/Jeroquendo/files-directories/blob/master/Imagenes/02.1%20mi_Ls.png)
-
+-Para tomar un argumento adicional el cual es el directorio se debe indicar asi:
+```c
+./mi_ls -l ..
+// or 
+./mi_ls -l ../..
+```
 
 3. **Tail**: Escriba un programa que imprima una cuantas líneas al final de un archivo. El programa deberá ser eficiente, de manera que realice un *seek* para desplazarse cerca del final del archivo, realice una lectura de un bloque de datos y luego retroceda hasta encontrar el número de líneas solicitado; hasta este punto, el programa debería imprimir esas lineas desde el principio al final del archivo. Para invocar el programa, uno deberia digitar: ```mytail -n file```, donde ```n``` es el número de lineas al final del archivo a imprimir. Interfaces Útiles: ```stat()```, ```lseek()```, ```open()```, ```read()```, ```close()```.
 
-- El codigo realizado para el comando ```tail()``` es el siguiente: [fstat.c]()
+- El codigo realizado para el comando ```tail()``` es el siguiente: [fstat.c](https://github.com/Jeroquendo/files-directories/blob/master/mi_tail.c)
 
 4. **Recursive Search**: Escriba un programa que imprima los nombres de cada archivo y directorio del árbol del sistema de archivos (*file system tree*), empezando en un punto dado del sistema de archivos en el árbol. Por ejemplo, cuando ejecute sin argumentos, el programa deberá empezar con el directorio de trabajo actual e imprimir su contenido, así como con los contenidos de cualquier subdirectorio en este, etc., hasta que el árbol entero, root en el CWD sea impreso. Si se da un único argumento (de un nombre de un directorio), use este como root en vez de él del sistema. Refine su busqueda recursiva con más opciones de busqueda divertidas, similar a la poderosa herramienta por línea de comandos ```find```. Interfaces Útiles: Resolverlo.
 
