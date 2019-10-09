@@ -50,5 +50,4 @@ int main(int argc, char * argv[])
 	while (fgets(str, 10000, file) != NULL) {
 		printf("%s", str);
 	}
-	printf("\n");
 }
